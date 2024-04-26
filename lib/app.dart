@@ -28,7 +28,7 @@ Tile onTileClicked(Tile tile) {
     tile.label = "SOS Signal";
     tile.tileStatus = TileStatus.inactive;
     tile.subtitle = "On";
-    tile.drawableName = "sos_on";
+    tile.drawableName = "sos_on.png";
   } else {
     // Tile has been clicked while it was inactive
     // Set it to active and change its values accordingly
@@ -36,7 +36,7 @@ Tile onTileClicked(Tile tile) {
     tile.label = "SOS Signal";
     tile.tileStatus = TileStatus.active;
     tile.subtitle = "Off";
-    tile.drawableName = "sos";
+    tile.drawableName = "sos.png";
   }
 
   SOSManager.instance.configSOS(start: tile.tileStatus == TileStatus.active);
@@ -50,7 +50,7 @@ Tile onTileAdded(Tile tile) {
   tile.label = "SOS Signal";
   tile.tileStatus = TileStatus.inactive;
   tile.subtitle = "On";
-  tile.drawableName = "sos";
+  tile.drawableName = "sos.png";
   return tile;
 }
 
